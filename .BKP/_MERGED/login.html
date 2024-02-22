@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+
+    <div class="nav-header">
+        <img src="logo.png" alt="logo" class="logo">
+        <ul>
+            <b>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </b>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit" onclick="login(event)">Login</button>
+        </form>
+        <p>Not got an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script>
+function login(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Retrieve the username and password values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Get the username and password input elements
+    var usernameInput = document.getElementById("username");
+    var passwordInput = document.getElementById("password");
+
+    // Reset previous styling
+    usernameInput.style.borderColor = "#ccc";
+    passwordInput.style.borderColor = "#ccc";
+
+    // Check if username and password are both missing
+    if (username.trim() === "" && password.trim() === "") {
+        usernameInput.style.borderColor = "red";
+        passwordInput.style.borderColor = "red";
+        return false; // Prevent form submission
+    }
+
+    // Check if only username is missing
+    if (username.trim() === "") {
+        usernameInput.style.borderColor = "red";
+        return false; // Prevent form submission
+    }
+
+    // Check if only password is missing
+    if (password.trim() === "") {
+        passwordInput.style.borderColor = "red";
+        return false; // Prevent form submission
+    }
+
+    // Check if login credentials are valid (dummy validation)
+    if (username === "example" && password === "password") {
+        window.location.href = "index.html"; // Redirect to home page
+        return false; // Prevent form submission
+    } else {
+        // Clear password field
+        document.getElementById("password").value = "";
+
+        // Highlight the password field
+        passwordInput.style.borderColor = "red";
+        return false; // Prevent form submission
+    }
+}
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+
+    <div class="nav-header">
+        <img src="logo.png" alt="logo" class="logo">
+        <ul>
+            <b>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                            </b>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit" onclick="login(event)">Login</button>
+        </form>
+        <p>Not got an account? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script src="login_logic.js"></script>
+
+</body>
+
+</html>

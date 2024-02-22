@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(90deg, #1d1d1d, #332828);
+}
+
+.logo{
+    margin: 0 35px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.nav-header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0; 
+    background-color: #25252562;
+    backdrop-filter: blur(10px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+.nav-header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    width: 60px; 
+    transform: translateX(-50%);
+}
+
+.nav-header ul li a{
+    text-decoration: none;
+    color: #5b3d3d;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 140%; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-header ul li a::after{
+    content: '';
+    width: 150%;
+    height: 240%;
+    background: #ff9595;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+    border-radius: 5px;
+    z-index: -1; 
+    transition: 0.3s ease; 
+}
+
+.nav-header ul li a:hover{
+    color: #ff9595;
+}
+
+.nav-header ul li a:hover::after{
+    background: #ff959500
+}
+
+.container{
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popular{
+    margin: 1%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    background-color: #ff9595;
+    border-radius: 10px;
+    height: 800px;
+}
+
+.popular-image{
+    width: 100%;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.popular-description{
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.popular-image-div{
+    flex: 2;
+    display: flex;
+}
+
+.popular-info{
+    flex: 1;
+    display: flex;
+    width: 95%;
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.popular-info h2{
+    font-size: 50px;
+    margin: 15px;
+    color: #5b3d3d;
+    text-align: center;
+}
+
+.popular-info ul li{
+    justify-content: left;
+    list-style: none;
+    display: flex;
+    margin: 5% 20px;
+    position: relative;
+    align-items: center;
+}
+
+.popular-info p{
+    font-size: 20px;
+    margin: 15px;
+    color: #5b3d3d;
+}
+
+.user-image{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.featured{
+    height: 800px;
+    flex: 1;
+    margin: 1%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.featured-image{
+    width: 60%;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.featured ul li{
+    list-style: none;
+    display: flex;
+    margin: 1% 2px;
+    position: relative;
+    align-items: center;
+}
+
+a.fill-li-1{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.featured h2{
+    order: 1;
+    display: flex;
+    font-size: 48px;
+    color: #bbaaaa;
+    text-align: center;
+}
+
+.featured-images{
+    flex:1;
+    display: flex;
+}
+
+.featured-container{
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.featured-images p{
+    font-size: 20px;
+    margin: 15px;
+    color: #9e9e9e;
+}
+
+
+@media screen and (max-width: 768px) {
+    .popular, .featured {
+        width: 100%;
+        height: auto;
+    }
+    
+    .popular-info, .featured-container {
+        flex-direction: column;
+    }
+    
+    .popular-info h2, .featured h2 {
+        font-size: 36px;
+    }
+    
+    .popular-info ul li, .featured ul li {
+        margin: 10px 0;
+    }
+    
+    .featured-image {
+        width: 100%;
+    }
+}
+
