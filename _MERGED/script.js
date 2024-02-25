@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nav = document.getElementById("nav");
 
     function loadNav() {
-        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        const isLoggedIn = sessionStorage.getItem("isLoggedIn");
 
         if (isLoggedIn === "true") {
             // Show logged-in variant
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     nav.addEventListener("click", function(event) {
         if (event.target.id === "logout") {
             // Set isLoggedIn to false
-            localStorage.setItem("isLoggedIn", "false");
+            sessionStorage.setItem("isLoggedIn", "false");
             window.location.href = "index.html";
         }
     });
@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listener for page unload (closing page)
     window.addEventListener("beforeunload", function(event) {
         // Check if the user is logged in before unloading the page
-        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        const isLoggedIn = sessionStorage.getItem("isLoggedIn");
         if (isLoggedIn === "true") {
-            // Set isLoggedIn to false when the page is closed
-            localStorage.setItem("isLoggedIn", "false");
+            // No need to update session storage here
+            // Session storage will automatically be cleared when the session ends
         }
     });
 });

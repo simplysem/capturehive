@@ -34,7 +34,7 @@ function login(event) {
 
     // Check if login credentials are valid (dummy validation)
     if (username === "example" && password === "password") {
-        localStorage.setItem("isLoggedIn", "true");
+        sessionStorage.setItem("isLoggedIn", "true"); // Store isLoggedIn in sessionStorage
         window.location.href = "index.html"; // Redirect to home page
         return false; // Prevent form submission
     } else {
