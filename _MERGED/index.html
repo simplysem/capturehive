@@ -67,12 +67,24 @@
                 </div>
             </div>
         </div>
+
+        <select id="tag">
+            <option value="all">All</option>
+            <option value="car">Cars</option>
+            <option value="animal">Animals</option>
+        </select>
+        
+        <select id="sorting">
+            <option value="age">Newest</option>
+            <option value="likes">Most Liked</option>
+        </select>
+
         <div class="feed">
             <div class="feed-title">
                 <h2>Recent Images</h2>
             </div>
-            <div class="grid-container">
-                <div class="grid-item">
+            <div id="gallery" class="grid-container">
+                <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
                     <div class="feed-image">
                         <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                     </div>
@@ -88,9 +100,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
                     <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                     </div>
                     <div class="user-section">
                         <div class="user-image">
@@ -104,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-age="10" data-likes="1000" data-tag="car">
                     <div class="feed-image">
                         <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                     </div>
@@ -330,6 +342,8 @@
                 </div>
             </div>
         </div>
+        
         <script src="script.js"></script>
+        <script src="gallery.js"></script>
     </body>
 </html>
