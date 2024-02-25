@@ -14,6 +14,7 @@
 
     <body>
         
+
         <!-- Popup -->
         <div id="mypopup" class="popup">
                 
@@ -25,332 +26,341 @@
 
 
         </div>
-
-        <div class="nav-header">
         
-            <a href="index.html">
-                <img src="capturehive.png" alt="logo" class="logo" style="width: 193px;height: 31px;">
 
-            </a>
-            
-            <b>
-                <ul id="nav">
 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-
-                </ul>
-            </b>
+        <div id="post1" class="post">
+            <span class="close" onclick="closepost()">&times;</span>
+            <iframe src="post1.html" class="post-content"></iframe> 
         </div>
 
-        <div class="container">
-            <div class="popular" onclick="location.href='post1.html';" style="cursor: pointer;">
-                <div class="popular-image-div">
-                    <img src="images/DSC_4774.jpg" alt="popular image" class="popular-image">
-                </div>
-                <div class="popular-info">
-                    <ul>
-                        <li><h2>Title of most popular image</h2></li>
-                        <li class="user-info">
-                            <b><p>Mob Barley</p></b>
-                            <img src="images/user.png" alt="user" class="user-image">
-                        </li>
-                        <li><h4>Captured on: </h4></li>
-                        <li><p>Nikon D90</p></li>
+        <div class="main-container" id="blur" >
+            <div class="nav-header">
+            
+                <a href="index.html">
+                    <img src="capturehive.png" alt="logo" class="logo" style="width: 193px;height: 31px;">
+
+                </a>
+                
+                <b>
+                    <ul id="nav">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+
                     </ul>
-                </div>
-                <div class="popular-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus luctus tristique. Aliquam quis velit efficitur, euismod lorem eget, commodo erat. In hac habitasse platea dictumst. Phasellus imperdiet eros risus, id euismod mi pretium id. Vivamus ullamcorper cursus turpis id condimentum. Aenean mattis tristique enim id cursus. Nunc sit amet nisi tellus. Praesent est ipsum, pretium ut dapibus sed, aliquam non dui. Nunc sapien lorem, lobortis eget vulputate et, fringilla non tortor. Aliquam fermentum mauris id metus tempor tristique. Maecenas commodo tellus nisi, ut scelerisque elit eleifend eget. Aliquam eu libero nulla. Sed ac faucibus odio.</p>
-                </div>
+                </b>
             </div>
-            <div class="featured">
-                <h2>Featured Images</h2>
-                <div class="featured-container">
-                    <div class="featured-images">
+
+            <div class="container">
+                <div class="popular" onclick="openpost()" style="cursor: pointer;">
+                    <div class="popular-image-div">
+                        <img src="images/DSC_4774.jpg" alt="popular image" class="popular-image">
+                    </div>
+                    <div class="popular-info">
                         <ul>
-                            <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4819.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page1.html"></a></li>
-                            <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4832.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page2.html"></a></li>
-                            <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4857.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page3.html"></a></li>
+                            <li><h2>Title of most popular image</h2></li>
+                            <li class="user-info">
+                                <b><p>Mob Barley</p></b>
+                                <img src="images/user.png" alt="user" class="user-image">
+                            </li>
+                            <li><h4>Captured on: </h4></li>
+                            <li><p>Nikon D90</p></li>
                         </ul>
                     </div>
+                    <div class="popular-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus luctus tristique. Aliquam quis velit efficitur, euismod lorem eget, commodo erat. In hac habitasse platea dictumst. Phasellus imperdiet eros risus, id euismod mi pretium id. Vivamus ullamcorper cursus turpis id condimentum. Aenean mattis tristique enim id cursus. Nunc sit amet nisi tellus. Praesent est ipsum, pretium ut dapibus sed, aliquam non dui. Nunc sapien lorem, lobortis eget vulputate et, fringilla non tortor. Aliquam fermentum mauris id metus tempor tristique. Maecenas commodo tellus nisi, ut scelerisque elit eleifend eget. Aliquam eu libero nulla. Sed ac faucibus odio.</p>
+                    </div>
+                </div>
+                <div class="featured">
+                    <h2>Featured Images</h2>
+                    <div class="featured-container">
+                        <div class="featured-images">
+                            <ul>
+                                <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4819.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page1.html"></a></li>
+                                <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4832.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page2.html"></a></li>
+                                <li onclick="location.href='about.html';" style="cursor: pointer;"><img src="images/DSC_4857.jpg" alt="featured image" class="featured-image"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><a href="page3.html"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="feed">
-            <div class="feed-title">
-                <h2>Browse</h2>
-            </div>
-            <div class="feed-container">
-                <div class="sorting">
-                    <select id="tag">
-                        <option value="all">All</option>
-                        <option value="car">Cars</option>
-                        <option value="animal">Animals</option>
-                    </select>
-                    
-                    <select id="sorting">
-                        <option value="age">Newest</option>
-                        <option value="likes">Most Liked</option>
-                    </select>
+            <div class="feed">
+                <div class="feed-title">
+                    <h2>Browse</h2>
                 </div>
+                <div class="feed-container">
+                    <div class="sorting">
+                        <select id="tag">
+                            <option value="all">All</option>
+                            <option value="car">Cars</option>
+                            <option value="animal">Animals</option>
+                        </select>
+                        
+                        <select id="sorting">
+                            <option value="age">Newest</option>
+                            <option value="likes">Most Liked</option>
+                        </select>
+                    </div>
 
-                <div id="gallery" class="grid-container">
-                    <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div id="gallery" class="grid-container">
+                        <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item" data-age="1" data-likes="0" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" data-age="2" data-likes="15" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item" data-age="34" data-likes="124" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="1" data-likes="0" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" data-age="4" data-likes="32" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item" data-age="12" data-likes="134" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="2" data-likes="15" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" data-age="6" data-likes="35" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item"  data-age="1" data-likes="6" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="34" data-likes="124" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item"  data-age="2" data-likes="15" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item"  data-age="5" data-likes="47" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="4" data-likes="32" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item" data-age="9" data-likes="28" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item" data-age="16" data-likes="2005" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item" data-age="12" data-likes="134" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item"  data-age="3" data-likes="3" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
-                        </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
-                            </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item"  data-age="12" data-likes="124" data-tag="car">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        <div class="grid-item" data-age="6" data-likes="35" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item"  data-age="1" data-likes="6" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid-item"  data-age="1" data-likes="124" data-tag="animal">
-                        <div class="feed-image">
-                            <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
+                        <div class="grid-item"  data-age="2" data-likes="15" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="user-section">
-                            <div class="user-image">
-                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                        <div class="grid-item"  data-age="5" data-likes="47" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
-                            <div class="username">
-                                <h3>Username</h3>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
-                            <div class="camera">
-                                <p>Fujifilm T-4</p>
+                        </div>
+                        <div class="grid-item" data-age="9" data-likes="28" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-age="16" data-likes="2005" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item"  data-age="3" data-likes="3" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item"  data-age="12" data-likes="124" data-tag="car">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item"  data-age="1" data-likes="124" data-tag="animal">
+                            <div class="feed-image">
+                                <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
+                            </div>
+                            <div class="user-section">
+                                <div class="user-image">
+                                    <img class="user-pfp" src="images/user.png" alt="User Image">
+                                </div>
+                                <div class="username">
+                                    <h3>Username</h3>
+                                </div>
+                                <div class="camera">
+                                    <p>Fujifilm T-4</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -363,23 +373,40 @@
 
         <script>
             // Function to open the popup
+
+            function openpost() {
+                var blur = document.getElementById('blur');
+                var popup = document.getElementById('post1');
+                popup.style.display = 'block';
+                blur.classList.add('active'); // Add blur class to body
+            }
+
+            function closepost() {
+                var blur = document.getElementById('blur');
+                var popup = document.getElementById('post1');
+                popup.style.display = 'none';
+                blur.classList.remove('active'); // Remove blur class from body
+            }
+
             function openPopup() {
+                var blur = document.getElementById('blur');
                 var popup = document.getElementById("mypopup");
-                popup.style.display = "block";
-                document.body.classList.add("blur"); // Add blur class to body
-}
+                popup.style.display = 'block';
+                blur.classList.add('active'); // Add blur class to body
+            }
 
             // Function to close the popup
             function closePopup() {
-                var popup = document.getElementById("mypopup");
-                popup.style.display = "none";
-                    document.body.classList.remove("blur"); // Remove blur class from body
-}
+                var blur = document.getElementById('blur');
+                var popup = document.getElementById('mypopup');
+                popup.style.display = 'none';
+                blur.classList.remove('active'); // Remove blur class from body
+            }
 
             // show popup
-                window.onload = function () {
-                    openPopup();
-}
+            window.onload = function () {
+                openPopup();
+            }
         </script>
     </body>
 </html>
