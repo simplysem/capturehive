@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<!-- felix tehe -->
 
 <html>
 
@@ -10,10 +9,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="popup.css">
     </head>
 
     <body>
+        
+        <!-- Popup -->
+        <div id="mypopup" class="popup">
+                
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p>Welcome to our website! Here's the latest news:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus luctus tristique. Aliquam quis velit efficitur, euismod lorem eget, commodo erat. In hac habitasse platea dictumst. Phasellus imperdiet eros risus, id euismod mi pretium id. Vivamus ullamcorper cursus turpis id condimentum. Aenean mattis tristique enim id cursus. Nunc sit amet nisi tellus. Praesent est ipsum, pretium ut dapibus sed, aliquam non dui. Nunc sapien lorem, lobortis eget vulputate et, fringilla non tortor. Aliquam fermentum mauris id metus tempor tristique. Maecenas commodo tellus nisi, ut scelerisque elit eleifend eget. Aliquam eu libero nulla. Sed ac faucibus odio.</p>
+            </div>
 
+
+        </div>
 
         <div class="nav-header">
         
@@ -137,5 +148,26 @@
         
         <script src="script.js"></script>
         <script src="gallery.js"></script>
+
+        <script>
+            // Function to open the popup
+            function openPopup() {
+                var popup = document.getElementById("mypopup");
+                popup.style.display = "block";
+                document.body.classList.add("blur"); // Add blur class to body
+}
+
+            // Function to close the popup
+            function closePopup() {
+                var popup = document.getElementById("mypopup");
+                popup.style.display = "none";
+                    document.body.classList.remove("blur"); // Remove blur class from body
+}
+
+            // show popup
+                window.onload = function () {
+                    openPopup();
+}
+        </script>
     </body>
 </html>
