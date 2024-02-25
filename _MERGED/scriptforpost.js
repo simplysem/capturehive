@@ -5,6 +5,11 @@ document.querySelector('.like-button').addEventListener('click', function() {
     var likeButton = this;
     var likeCount = parseInt(likeButton.textContent);
     likeButton.textContent = (likeCount + 1) + ' Likes';
+    if (likeButton.textContent === 'Like') {
+        likeButton.textContent = 'Unlike';
+      } else {
+        likeButton.textContent = 'Like';
+      }
   });
   
   // Favorite button functionality

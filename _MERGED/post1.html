@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 
-<!-- felix tehe -->
-
 <html>
 
-    <head>
-        <title>Most Popular Image</title>
-        <link rel="stylesheet" href="poststyle.css">
-    </head>
+<head>
+    <title>Most Popular Image</title>
+    <link rel="stylesheet" href="poststyle.css">
+</head>
 
-    <body>
+<body>
 
 
-        <div class="nav-header">
-        
-            <img src="logo.png" alt="logo" class="logo">
+    <div class="nav-header">
 
-            <ul id="nav">
-                <b>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </b>
-            </ul>
+        <img src="logo.png" alt="logo" class="logo">
 
-        </div>
+        <ul id="nav">
+            <b>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </b>
+        </ul>
 
-        <div class="post-container">
-            <div class="post-header">
-              <img src="images/user.png" alt="User Profile Picture" class="profile-picture">
-              <div class="user-details">
+    </div>
+
+    <div class="post-container">
+        <div class="post-header">
+            <a href="#" class="user-link">
+                <img src="images/user.png" alt="User Profile Picture" class="profile-picture">
                 <h2 class="user-name">John Doe</h2>
-                <p class="device-used">Device: Smartphone</p>
-              </div>
-            </div>
-            <img src="images/DSC_4774.jpg" alt="Post Image" class="post-image">
-            <div class="post-content">
-              <p class="description">
+            </a>
+            <p class="Captured on">Device: Nikon D90</p>
+        </div>
+        <img src="images/DSC_4774.jpg" alt="Post Image" class="post-image">
+        <div class="post-content">
+            <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat nisi sit amet ligula laoreet, at fermentum orci aliquam. Integer ac urna a nisi maximus scelerisque.
-              </p>
-              <div class="interactions">
+            </p>
+            <div class="interactions">
                 <button class="like-button">Like</button>
                 <button class="favorite-button">Favorite</button>
-              </div>
             </div>
-            <div class="comments-section">
-              <h3>Comments</h3>
-              <ul class="comments-list">
+        </div>
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul class="comments-list">
+                <!-- Dummy comment -->
+                <li class="comment">
+                    <div class="comment-content">
+                        <a href="#" class="user-link">
+                            <img src="images/profile-picture-comment.jpg" alt="User Profile Picture" class="profile-picture">
+                            <span class="user-name">Mob Barley</span>
+                        </a>
+                        <p>This is a dummy comment from Mob Barley.</p>
+                    </div>
+                </li>
                 <!-- Comments will be added dynamically using JavaScript -->
-              </ul>
-              <form id="comment-form">
+            </ul>
+            <form id="comment-form">
                 <textarea id="comment-input" placeholder="Add a comment..."></textarea>
                 <button type="submit">Post</button>
-              </form>
-            </div>
-          </div>
-        
+            </form>
+        </div>
+    </div>
 
-          <script src="script.js"></script>
-          <script src="scriptforpost.js"></script>
 
-    </body>
+    <script src="script.js"></script>
+    <script src="scriptforpost.js"></script>
+
+</body>
 
 </html>
