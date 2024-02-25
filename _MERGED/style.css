@@ -323,6 +323,7 @@ a.fill-li-1{
 }
 
 .grid-item {
+    flex-wrap: wrap;
     display: inline-block;
     width: 20%;
     margin: 15px;
