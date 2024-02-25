@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Most Popular Image</title>
+    <link rel="stylesheet" href="poststyle.css">
+</head>
+
+<body>
+
+
+    <div class="nav-header">
+
+        <a href="index.html">
+            <img src="logo.png" alt="logo" class="logo">
+        </a>
+
+        <ul id="nav">
+            <b>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </b>
+        </ul>
+
+    </div>
+
+    <div class="post-container">
+        <div class="post-header">
+            <a href="profile.html" class="user-link">
+                <img src="images/user.png" alt="User Profile Picture" class="profile-picture">
+                <h2 class="user-name">Mob Barley</h2>
+            </a>
+            <p class="Captured on">Device: Nikon D90</p>
+        </div>
+        <img src="images/DSC_4774.jpg" alt="Post Image" class="post-image">
+        <div class="post-content">
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat nisi sit amet ligula laoreet, at fermentum orci aliquam. Integer ac urna a nisi maximus scelerisque.
+            </p>
+            <div class="interactions">
+                <button class="like-button">Like</button>
+                <button class="favorite-button">Favorite</button>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <ul class="comments-list">
+                <!-- Dummy comment -->
+                <li class="comment">
+                    <div class="comment-content">
+                        <a href="profile.html" class="user-link">
+                            <img src="images/user.png" alt="User Profile Picture" class="profile-picture">
+                            <span class="user-name">Mob Barley</span>
+                        </a>
+                        <p>This is a dummy comment from Mob Barley.</p>
+                    </div>
+                </li>
+                <!-- Comments will be added dynamically using JavaScript -->
+            </ul>
+            <form id="comment-form">
+                <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="scriptforpost.js"></script>
+
+</body>
+
+</html>
