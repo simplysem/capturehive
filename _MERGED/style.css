@@ -225,7 +225,7 @@ a.fill-li-1{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
     .popular, .featured {
         width: 100%;
         height: auto;

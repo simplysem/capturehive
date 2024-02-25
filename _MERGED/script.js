@@ -7,12 +7,18 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isLoggedIn === "true") {
             // Show logged-in variant
             nav.innerHTML = `
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="#" id="logout">Logout</a></li>
             `;
         } else {
             // Show logged-out variant
             nav.innerHTML = `
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
             `;
         }
