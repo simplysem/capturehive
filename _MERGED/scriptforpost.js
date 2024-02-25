@@ -1,15 +1,14 @@
 // JavaScript for handling like, favorite, and comment submission
 
 // Like button functionality
+
 document.querySelector('.like-button').addEventListener('click', function() {
-var likeButton = this;
-    var likeCount = parseInt(likeButton.textContent);
-    if (likeButton.textContent.includes('Like')) {
-        likeButton.textContent = (likeCount + 1) + ' Likes';
+    var likeButton = this;
+    if (likeButton.textContent === 'Like') {
+        likeButton.textContent = 'Unlike';
     } else {
-        likeButton.textContent = (likeCount - 1) + ' Likes';
+        likeButton.textContent = 'Like';
     }
-    likeButton.textContent = likeButton.textContent.includes('Like') ? likeButton.textContent.replace('Like', 'Unlike') : likeButton.textContent.replace('Unlike', 'Like');
   });
   
   // Favorite button functionality
