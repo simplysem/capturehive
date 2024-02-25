@@ -294,13 +294,17 @@ a.fill-li-1{
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
+    flex-direction: column;
 }
 
 .feed-title {
+    order: -1;
     display: flex;
     font-size: 48px;
     margin: 15px;
     color: #000000;
+    text-align: center;
+    align-self: center;
 }
 
 .feed-title h2{
@@ -316,7 +320,6 @@ a.fill-li-1{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 5px;
 }
 
 .grid-item {
@@ -420,4 +423,24 @@ a.fill-li-1{
 
 .hidden {
     display: none;
+}
+
+
+.sorting {
+    order: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+select {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    color: #333;
+    width: 200px;
 }

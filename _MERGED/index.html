@@ -68,275 +68,279 @@
             </div>
         </div>
 
-        <select id="tag">
-            <option value="all">All</option>
-            <option value="car">Cars</option>
-            <option value="animal">Animals</option>
-        </select>
-        
-        <select id="sorting">
-            <option value="age">Newest</option>
-            <option value="likes">Most Liked</option>
-        </select>
-
         <div class="feed">
             <div class="feed-title">
-                <h2>Recent Images</h2>
+                <h2>Browse</h2>
             </div>
-            <div id="gallery" class="grid-container">
-                <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
+            <div class="feed-container">
+                <div class="sorting">
+                    <select id="tag">
+                        <option value="all">All</option>
+                        <option value="car">Cars</option>
+                        <option value="animal">Animals</option>
+                    </select>
+                    
+                    <select id="sorting">
+                        <option value="age">Newest</option>
+                        <option value="likes">Most Liked</option>
+                    </select>
                 </div>
-                <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+
+                <div id="gallery" class="grid-container">
+                    <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item" data-age="10" data-likes="1000" data-tag="car">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item" data-age="10" data-likes="1000" data-tag="car">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
-                    </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
-                        </div>
-                        <div class="username">
-                            <h3>Username</h3>
-                        </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="feed-image">
-                        <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-section">
-                        <div class="user-image">
-                            <img class="user-pfp" src="images/user.png" alt="User Image">
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                         </div>
-                        <div class="username">
-                            <h3>Username</h3>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
-                        <div class="camera">
-                            <p>Fujifilm T-4</p>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="feed-image">
+                            <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
+                        </div>
+                        <div class="user-section">
+                            <div class="user-image">
+                                <img class="user-pfp" src="images/user.png" alt="User Image">
+                            </div>
+                            <div class="username">
+                                <h3>Username</h3>
+                            </div>
+                            <div class="camera">
+                                <p>Fujifilm T-4</p>
+                            </div>
                         </div>
                     </div>
                 </div>
