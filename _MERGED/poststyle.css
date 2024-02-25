@@ -74,3 +74,73 @@ body{
 .nav-header ul li a:hover::after{
     background: #868585
 }
+
+.post-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    margin-bottom: 5px;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .interactions button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .comments-section {
+    margin-top: 20px;
+  }
+  
+  .comments-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .comment {
+    margin-bottom: 10px;
+  }
+  
+  .comment-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #comment-input {
+    width: calc(100% - 80px);
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  #comment-form button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
