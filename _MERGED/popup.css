@@ -55,7 +55,7 @@
     top: 50%; 
     transform: translate(-50%, -50%); 
     height: 80%;
-    width: 80%; 
+    width: 30%; 
     overflow: auto; 
     background-color: rgba(0, 0, 0, 0); 
     z-index: 1000;
@@ -63,7 +63,30 @@
 }
 
 .post iframe {
+    transform: translate(-50%, -50%); 
     width: 100%;
     height: 90%;
     border: none;
+    position: fixed; 
+    left: 50%; 
+    top: 50%; 
+}
+
+.closepost {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closepost:hover,
+.closepost:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.postcontainer {
+    width: 100%;
+    height: 100%;
 }

@@ -28,24 +28,28 @@
         </div>
         
 
+        <div class="post-container" onclick="closepost()">
+            <div id="post1" class="post">
 
-        <div id="post1" class="post">
-            <span class="close" onclick="closepost()">&times;</span>
-            <iframe src="post1.html" class="post-content"></iframe> 
+                <span class="closepost" onclick="closepost()">&times;</span>
+                <iframe src="post1.html" class="post-content"></iframe> 
+
+            </div>
         </div>
 
-        <div class="main-container" id="blur" >
+        <div class="main-container" id="blur">
             <div class="nav-header">
             
                 <a href="index.html">
                     <img src="capturehive.png" alt="logo" class="logo" style="width: 193px;height: 31px;">
 
-            </a>
-            
-            <b>
-                <ul id="nav"></ul>
-            </b>
-        </div>
+                </a>
+                
+                <b>
+                    <ul id="nav"></ul>
+                </b>
+            </div>
+        
 
             <div class="container">
                 <div class="popular" onclick="openpost()" style="cursor: pointer;">
@@ -395,6 +399,8 @@
                 popup.style.display = 'none';
                 blur.classList.remove('active'); // Remove blur class from body
             }
+
+
 
             // show popup
             window.onload = function () {
