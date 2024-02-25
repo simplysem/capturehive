@@ -445,3 +445,5 @@ select {
     color: #333;
     width: 200px;
 }
+
+html{scroll-behavior:smooth}
