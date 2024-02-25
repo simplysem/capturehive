@@ -2,14 +2,14 @@
 
 // Like button functionality
 document.querySelector('.like-button').addEventListener('click', function() {
-    var likeButton = this;
+var likeButton = this;
     var likeCount = parseInt(likeButton.textContent);
-    likeButton.textContent = (likeCount + 1) + ' Likes';
-    if (likeButton.textContent === 'Like') {
-        likeButton.textContent = 'Unlike';
-      } else {
-        likeButton.textContent = 'Like';
-      }
+    if (likeButton.textContent.includes('Like')) {
+        likeButton.textContent = (likeCount + 1) + ' Likes';
+    } else {
+        likeButton.textContent = (likeCount - 1) + ' Likes';
+    }
+    likeButton.textContent = likeButton.textContent.includes('Like') ? likeButton.textContent.replace('Like', 'Unlike') : likeButton.textContent.replace('Unlike', 'Like');
   });
   
   // Favorite button functionality
