@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Show logged-in variant
             nav.innerHTML = `
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#browse">Browse</a></li>
+                <li><a href="index.html#browse">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="profile.html">Profile</a></li>
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Show logged-out variant
             nav.innerHTML = `
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#browse">Browse</a></li>
+                <li><a href="index.html#browse">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
