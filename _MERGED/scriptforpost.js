@@ -7,14 +7,6 @@ if (isLoggedIn === 'false') {
     var likeButton = document.querySelector('.like-button');
     var favoriteButton = document.querySelector('.favorite-button');
     
-    // Attach event listeners to show popup on button click
-    likeButton.addEventListener('click', function() {
-        showPopup();
-    });
-    
-    favoriteButton.addEventListener('click', function() {
-        showPopup();
-    });
 } else {
     // Like button functionality
     document.querySelector('.like-button').addEventListener('click', function() {
@@ -35,52 +27,29 @@ if (isLoggedIn === 'false') {
             favoriteButton.textContent = 'Favorite';
         }
     });
-}
 
-// Function to create and show the popup
-function showPopup() {
-  console.log("showPopup() function is called");
-  
-  var popupOverlay = document.createElement('div');
-  popupOverlay.classList.add('popup-overlay');
-  
-  var popupFrame = document.createElement('iframe');
-  popupFrame.src = 'popup.html';
-  popupFrame.classList.add('popup-frame');
-  
-  popupOverlay.appendChild(popupFrame);
-  document.body.appendChild(popupOverlay);
-  
-  // Close popup on click anywhere on the screen except the popup
-  document.addEventListener('click', closePopupOutside);
-  
-  // Prevent propagation of click events from the popup
-  popupOverlay.addEventListener('click', function(event) {
-      event.stopPropagation();
-  });
-  
-  // Add close button inside the popup
-  var closeButton = document.createElement('button');
-  closeButton.textContent = 'Close';
-  closeButton.classList.add('popup-close-button');
-  closeButton.addEventListener('click', closePopup);
-  popupOverlay.appendChild(closeButton);
-}
-
-// Function to close the popup when clicked outside
-function closePopupOutside(event) {
-  var popupOverlay = document.querySelector('.popup-overlay');
-  if (popupOverlay && !popupOverlay.contains(event.target)) {
-      popupOverlay.remove();
-      document.removeEventListener('click', closePopupOutside);
-  }
-}
-
-// Function to close the popup
-function closePopup() {
-  var popupOverlay = document.querySelector('.popup-overlay');
-  if (popupOverlay) {
-      popupOverlay.remove();
-      document.removeEventListener('click', closePopupOutside);
-  }
+    document.getElementById('comment-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get comment input value
+        var commentInput = document.getElementById('comment-input').value.trim();
+        
+        if (commentInput !== '') {
+          // Create new comment element
+          var newComment = document.createElement('li');
+          newComment.classList.add('comment');
+          
+          var commentContent = document.createElement('div');
+          commentContent.classList.add('comment-content');
+          commentContent.textContent = commentInput;
+          
+          newComment.appendChild(commentContent);
+          
+          // Append the new comment to the comments list
+          document.querySelector('.comments-list').appendChild(newComment);
+          
+          // Clear the comment input
+          document.getElementById('comment-input').value = '';
+        }
+    });
 }
