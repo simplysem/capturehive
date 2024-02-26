@@ -1,26 +1,29 @@
+/* Reset styles for all elements */
 *{
     margin: 0;
     padding: 0;
     font-family: "DM Serif Display", serif;
-    
 }
 
+/* Styles for DM Serif Display regular font */
 .dm-serif.display-regular {
-    
     font-weight: 700;
     font-style: normal;
 }
 
+/* Body styles */
 body{
     background-image: linear-gradient(90deg, #ffffff, #ffffff);
 }
 
+/* Logo styles */
 .logo{
     margin: 0 35px;
     width: 70px;
     cursor: pointer;
 }
 
+/* Navigation header styles */
 .nav-header{
     margin: auto;
     display: flex;
@@ -38,6 +41,7 @@ body{
     top: 0;
 }
 
+/* Navigation header list item styles */
 .nav-header ul li{
     list-style: none;
     display: inline-block;
@@ -47,6 +51,7 @@ body{
     transform: translateX(-50%);
 }
 
+/* Navigation header link styles */
 .nav-header ul li a{
     text-decoration: none;
     color: #0298ba9d;
@@ -60,6 +65,7 @@ body{
     transition: background-color 0.3s ease; 
 }
 
+/* Navigation header link hover styles */
 .nav-header ul li a::after{
     content: '';
     width: 150%;
@@ -74,14 +80,17 @@ body{
     transition: 0.3s ease; 
 }
 
+/* Navigation header link hover styles */
 .nav-header ul li a:hover{
     color: #D9D9D9;
 }
 
+/* Navigation header link hover styles */
 .nav-header ul li a:hover::after{
     background: #868585
 }
 
+/* Container styles */
 .container{
     margin: 0 5px;
     display: flex;
@@ -90,6 +99,7 @@ body{
     flex-wrap: wrap;
 }
 
+/* Popular section styles */
 .popular{
     margin: 1%;
     width: 50%;
@@ -101,8 +111,10 @@ body{
     background-color: #0298ba9d;
     border-radius: 10px;
     height: 800px;
+    flex-direction: column;
 }
 
+/* Popular image styles */
 .popular-image{
     width: 100%;
     margin: 15px;
@@ -112,6 +124,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Popular description styles */
 .popular-description{
     font-size: 18px;
     display: block;
@@ -121,11 +134,14 @@ body{
     overflow: hidden;
     border-radius: 10px;
 }
+
+/* Popular image div styles */
 .popular-image-div{
     flex: 2;
     display: flex;
 }
 
+/* Popular info styles */
 .popular-info{
     flex: 1;
     display: flex;
@@ -134,9 +150,9 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-
 }
 
+/* Popular info heading styles */
 .popular-info h2{
     font-size: 50px;
     margin: 15px;
@@ -144,6 +160,7 @@ body{
     text-align: center;
 }
 
+/* Popular info list item styles */
 .popular-info ul li{
     justify-content: left;
     list-style: none;
@@ -153,12 +170,14 @@ body{
     align-items: center;
 }
 
+/* Popular info paragraph styles */
 .popular-info p{
     font-size: 20px;
     margin: 15px;
     color: #000000;
 }
 
+/* User image styles */
 .user-image{
     display: flex;
     width: 90px;
@@ -167,6 +186,7 @@ body{
     margin: 10px;
 }
 
+/* Featured section styles */
 .featured{
     height: 800px;
     flex: 1;
@@ -180,6 +200,7 @@ body{
     flex-direction: column;
 }
 
+/* Featured image styles */
 .featured-image{
     width: 400px;
     margin: 5px;
@@ -189,21 +210,7 @@ body{
     margin-bottom: 5px;
 }
 
-.featured ul li{
-    list-style: none;
-    display: flex;
-    margin: 1% 2px;
-    position: relative;
-    align-items: center;
-}
-
-a.fill-li-1{
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-}
-
+/* Featured heading styles */
 .featured h2{
     order: 1;
     display: flex;
@@ -212,11 +219,14 @@ a.fill-li-1{
     text-align: center;
 }
 
+/* Featured images styles */
 .featured-images{
     flex:1;
     display: flex;
+    flex-direction: column;
 }
 
+/* Featured container styles */
 .featured-container{
     order: 2;
     display: flex;
@@ -226,6 +236,7 @@ a.fill-li-1{
     height: 100%;
 }
 
+/* Featured images paragraph styles */
 .featured-images p{
     font-size: 20px;
     margin: 15px;
@@ -233,8 +244,15 @@ a.fill-li-1{
     width: 80%;
 }
 
+.featured-image-item{
+    display: flex;
+    margin: 1% 2px;
+    position: relative;
+    align-items: center;
+}
 
-@media screen and (max-width: 1600px) {
+/* Media query for screens up to 1400px */
+@media screen and (max-width: 1400px) {
     .popular, .featured {
         width: 100%;
         height: auto;
@@ -253,6 +271,7 @@ a.fill-li-1{
     }
 }
 
+/* Media query for screens up to 800px */
 @media screen and (max-width: 800px) {
     .nav-header ul li {
         margin: 2px 10px;
@@ -286,9 +305,9 @@ a.fill-li-1{
     .popular-description{
         width: 100%;
     }
-
 }
 
+/* Feed section styles */
 .feed {
     width: 100%;
     display: flex;
@@ -298,6 +317,7 @@ a.fill-li-1{
     flex-direction: column;
 }
 
+/* Feed title styles */
 .feed-title {
     order: -1;
     display: flex;
@@ -308,6 +328,7 @@ a.fill-li-1{
     align-self: center;
 }
 
+/* Feed title heading styles */
 .feed-title h2{
     font-size: 48px;
     margin: 15px;
@@ -315,6 +336,7 @@ a.fill-li-1{
     text-align: center;
 }
 
+/* Grid container styles */
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -323,6 +345,7 @@ a.fill-li-1{
     width: 100%;
 }
 
+/* Grid item styles */
 .grid-item {
     flex-wrap: wrap;
     display: inline-block;
@@ -330,26 +353,28 @@ a.fill-li-1{
     margin: 15px;
 }
 
+/* Media query for screens up to 1600px */
 @media screen and (max-width: 1600px) {
     .grid-item {
         width: calc(28%);
     }
 }
 
+/* Media query for screens up to 900px */
 @media screen and (max-width: 900px) {
     .grid-item {
         width: 44%;
     }
-    
 }
 
+/* Media query for screens up to 600px */
 @media screen and (max-width: 600px) {
     .grid-item {
         width: 100%;
     }
-    
 }
 
+/* Feed main image styles */
 .feed-main-image {
     width: 100%;
     height: 300px;
@@ -359,29 +384,32 @@ a.fill-li-1{
     border-radius: 10px;
 }
 
+/* User profile picture and image styles */
 .user-pfp, .user-image{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
+/* User section styles */
 .user-section {
     display: flex;
     align-items: center;
 }
 
+/* Camera icon styles */
 .camera {
     margin: 0 10px;
 }
 
-
-/* About Page Styles */
+/* About page container styles */
 .about-container {
     background-color: #fff; 
     padding: 20px;
     margin-top: 0px; /* Adjusted to push down for fixed header */
 }
 
+/* About page header styles */
 .about-header {
     text-align: center;
     background-color: #0298ba9d; 
@@ -389,6 +417,7 @@ a.fill-li-1{
     margin-bottom: 20px;
 }
 
+/* About page section styles */
 .about-section {
     display: flex;
     align-items: center;
@@ -396,22 +425,26 @@ a.fill-li-1{
     margin-bottom: 20px;
 }
 
+/* About page text styles */
 .about-text {
     flex: 1;
     padding-left: 20px; /* Adjust padding for spacing */
 }
 
+/* About page image container styles */
 .about-image-container {
     flex: 1;
     text-align: center;
 }
 
+/* About page image styles */
 .about-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Rounded corners */
 }
 
+/* Media query for screens up to 768px */
 @media screen and (max-width: 768px) {
     .about-section {
         flex-direction: column;
@@ -423,11 +456,12 @@ a.fill-li-1{
     }
 }
 
+/* Hidden class styles */
 .hidden {
     display: none;
 }
 
-
+/* Sorting section styles */
 .sorting {
     order: 0;
     display: flex;
@@ -436,6 +470,7 @@ a.fill-li-1{
     margin: 20px 0;
 }
 
+/* Select dropdown styles */
 select {
     margin: 0 10px;
     padding: 10px;
@@ -447,4 +482,5 @@ select {
     width: 200px;
 }
 
+/* Smooth scrolling for HTML */
 html{scroll-behavior:smooth}
