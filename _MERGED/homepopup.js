@@ -7,6 +7,7 @@ function closePopup() {
     blur.classList.remove('active'); // Remove blur class from body
         
     // Set "hasRead" to true in session storage
+    // I am assuming that if you close the pop up you have read it
     sessionStorage.setItem("hasRead", 'true');
 }
 
