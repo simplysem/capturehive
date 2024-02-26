@@ -1,3 +1,13 @@
+// Check if "hasRead" is null (indicating it hasn't been initialized yet)
+if (hasRead === null) {
+    // Set "hasRead" to false in session storage
+    sessionStorage.setItem("hasRead", false);
+}
+
+// Retrieve the value of "hasRead" from session storage
+let hasRead = sessionStorage.getItem("hasRead");
+
+
 // Function to close the popup
 // Called out side Domload so that it can be accseed gloably
 function closePopup() {
@@ -13,15 +23,6 @@ function closePopup() {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Retrieve the value of "hasRead" from session storage
-    let hasRead = sessionStorage.getItem("hasRead");
-
-    // Check if "hasRead" is null (indicating it hasn't been initialized yet)
-    if (hasRead === null) {
-        // Set "hasRead" to false in session storage
-        sessionStorage.setItem("hasRead", false);
-    }
-
     console.log("china");
 
     function openPopup() {
@@ -34,9 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Check if "hasRead" is true (assuming you stored boolean values)
     if (hasRead === 'false') {
         console.log("In the place")
-        // Function to open the popup
 
-        // Show popup
         window.onload = function () {
             openPopup();
         }
