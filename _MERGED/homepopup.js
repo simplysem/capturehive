@@ -13,7 +13,7 @@ function closePopup() {
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    
+    // VAriable set here because it would never be initalized
     // Retrieve the value of "hasRead" from session storage
     let hasRead = sessionStorage.getItem("hasRead");
 
@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
         sessionStorage.setItem("hasRead", false);
     }
 
-    console.log("china");
-
     function openPopup() {
         var blur = document.getElementById('blur');
         var popup = document.getElementById("mypopup");
@@ -32,10 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         blur.classList.add('active'); // Add blur class to body
     }
 
-    // Check if "hasRead" is true (assuming you stored boolean values)
+    // If has read if false or null open it
     if (hasRead === null || hasRead === 'false') {
-        console.log("In the place")
-
         window.onload = function () {
             openPopup();
         }
