@@ -34,9 +34,7 @@ function login(event) {
         // Redirect to the home page
         window.location.href = "index.html";
     } else {
-        // Display error by turning input boxes red
-        usernameInput.classList.add("error");
-        passwordInput.classList.add("error");
+        alert("Wrong Username or password.");
     }
 
     return false; // Prevent form submission
