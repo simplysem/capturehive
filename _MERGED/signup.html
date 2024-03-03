@@ -39,44 +39,7 @@
         <p>Already have an account? <a href="login.html">Login</a></p>
     </div>
 
-    <script>
-        function signup() {
-            var username = document.getElementById("username").value;
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            
-            var usernameError = document.getElementById("usernameError");
-            var emailError = document.getElementById("emailError");
-            var passwordError = document.getElementById("passwordError");
-            
-            var isValid = true;
-
-            // Clear previous error messages
-            usernameError.innerHTML = "";
-            emailError.innerHTML = "";
-            passwordError.innerHTML = "";
-
-            // Check username
-            if (username.trim() === "") {
-                usernameError.innerHTML = "Please enter a username";
-                isValid = false;
-            }
-
-            // Check email
-            if (email.trim() === "") {
-                emailError.innerHTML = "Please enter an email";
-                isValid = false;
-            }
-
-            // Check password
-            if (password.trim() === "") {
-                passwordError.innerHTML = "Please enter a password";
-                isValid = false;
-            }
-
-            return isValid;
-        }
-    </script>
+    <script src="signup.js"></script>
 
 </body>
 

@@ -1,48 +1,60 @@
-function login(event) {
-    event.preventDefault(); // Prevent default form submission
+document.addEventListener("DOMContentLoaded", function() {
 
-    // Retrieve the username and password values
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    let loacalUsername = sessionStorage.getItem("hasRead");
 
-    // Get the username and password input elements
-    var usernameInput = document.getElementById("username");
-    var passwordInput = document.getElementById("password");
-
-    // Reset previous styling
-    usernameInput.style.borderColor = "#ccc";
-    passwordInput.style.borderColor = "#ccc";
-
-    // Check if username and password are both missing
-    if (username.trim() === "" && password.trim() === "") {
-        usernameInput.style.borderColor = "red";
-        passwordInput.style.borderColor = "red";
-        return false; // Prevent form submission
+    // Check if "loacalUsername" is null (indicating it hasn't been initialized yet)
+    if (loacalUsername === null) {
+        // Set "loacalUsername" to false in session storage
+        sessionStorage.setItem("loacalUsername", "");
     }
 
-    // Check if only username is missing
-    if (username.trim() === "") {
-        usernameInput.style.borderColor = "red";
-        return false; // Prevent form submission
-    }
+    function login(event) {
+        event.preventDefault(); // Prevent default form submission
 
-    // Check if only password is missing
-    if (password.trim() === "") {
-        passwordInput.style.borderColor = "red";
-        return false; // Prevent form submission
-    }
+        // Retrieve the username and password values
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
 
-    // Check if login credentials are valid (dummy validation)
-    if (username === "example" && password === "password") {
-        sessionStorage.setItem("isLoggedIn", "true"); // Store isLoggedIn in sessionStorage
-        window.location.href = "index.html"; // Redirect to home page
-        return false; // Prevent form submission
-    } else {
-        // Clear password field
-        document.getElementById("password").value = "";
+        // Get the username and password input elements
+        var usernameInput = document.getElementById("username");
+        var passwordInput = document.getElementById("password");
 
-        // Highlight the password field
-        passwordInput.style.borderColor = "red";
-        return false; // Prevent form submission
+        // Reset previous styling
+        usernameInput.style.borderColor = "#ccc";
+        passwordInput.style.borderColor = "#ccc";
+
+        // Check if username and password are both missing
+        if (username.trim() === "" && password.trim() === "") {
+            usernameInput.style.borderColor = "red";
+            passwordInput.style.borderColor = "red";
+            return false; // Prevent form submission
+        }
+
+        // Check if only username is missing
+        if (username.trim() === "") {
+            usernameInput.style.borderColor = "red";
+            return false; // Prevent form submission
+        }
+
+        // Check if only password is missing
+        if (password.trim() === "") {
+            passwordInput.style.borderColor = "red";
+            return false; // Prevent form submission
+        }
+
+        // Check if login credentials are valid (dummy validation)
+        if (username === "example" && password === "password") {
+            sessionStorage.setItem("isLoggedIn", "true"); // Store isLoggedIn in sessionStorage
+            sessionStorage.setItem("loacalUsername", username);
+            window.location.href = "index.html"; // Redirect to home page
+            return false; // Prevent form submission
+        } else {
+            // Clear password field
+            document.getElementById("password").value = "";
+
+            // Highlight the password field
+            passwordInput.style.borderColor = "red";
+            return false; // Prevent form submission
+        }
     }
-}
+});
