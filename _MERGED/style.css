@@ -224,35 +224,52 @@ body{
 }
 
 /* Featured container styles */
-.featured-container{
-    order: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 800px;
-}
-
-/* Featured images paragraph styles */
-.featured-images p{
-    font-size: 20px;
-    margin: 15px;
-    color: #000000;
-    width: 80%;
-}
-
-.featured-image-item{
-    display: flex;
-    margin: 1% 2px;
-    position: relative;
-    align-items: center;
-}
-
-.featured-image-container {
+.featured-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    margin-bottom: 20px;
+  }
+  
+  .featured-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .featured-image-container {
+    flex-basis: 50%;
+  }
+  
+  .featured-image {
+    max-width: 100%; /* ensures image is not larger than its container */
+    height: auto; /* maintains the aspect ratio of the image */
+    display: block; /* ensures that the image does not have extra space around it */
+    margin-bottom: 20px; /* adds space below each image */
+  }
+  
+  
+  .description {
+    flex-basis: 50%;
+    padding: 0 20px;
+  }
+  
+  .description.right {
+    text-align: right;
+  }
+  
+  .description.left {
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .featured-item,
+    .featured-item.reverse {
+      flex-direction: column;
+    }
+  
+    .description {
+      text-align: center;
+      padding: 20px;
+    }
+  }
 
 /* Media query for screens up to 1400px */
 @media screen and (max-width: 1400px) {
