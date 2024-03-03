@@ -232,7 +232,10 @@ body{
 .featured-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCCCCC; /* subtle line color */
+    padding-bottom: 10px; /* space above the line */
+    margin-bottom: 10px; /* space below the line */
 }
   
 .featured-item.reverse {
@@ -510,3 +513,14 @@ select {
 
 /* Smooth scrolling for HTML */
 html{scroll-behavior:smooth}
+
+.featured-image-container img, .popular-image-div img, .feed-image img {
+    border: 1px solid #dddddd; /* subtle border color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow effect */
+    transition: transform 0.2s; /* smooth transition for hover effect */
+  }
+  
+  .featured-image-container img:hover, .popular-image-div img:hover, .feed-image img:hover {
+    transform: scale(1.03); /* subtle zoom effect on hover */
+  }
+  
