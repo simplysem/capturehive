@@ -1,60 +1,44 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-    let loacalUsername = sessionStorage.getItem("loacalUsername");
-
-    // Check if "loacalUsername" is null (indicating it hasn't been initialized yet)
-    if (loacalUsername === null) {
-        // Set "loacalUsername" to false in session storage
-        sessionStorage.setItem("loacalUsername", "");
-    }
 
     function login(event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); // Prevent form submission
 
-        // Retrieve the username and password values
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
 
-        // Get the username and password input elements
-        var usernameInput = document.getElementById("username");
-        var passwordInput = document.getElementById("password");
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
 
-        // Reset previous styling
-        usernameInput.style.borderColor = "#ccc";
-        passwordInput.style.borderColor = "#ccc";
+        // Resetting previous error styles
+        usernameInput.classList.remove("error");
+        passwordInput.classList.remove("error");
 
-        // Check if username and password are both missing
-        if (username.trim() === "" && password.trim() === "") {
-            usernameInput.style.borderColor = "red";
-            passwordInput.style.borderColor = "red";
+        // Check if username or password is empty
+        if (username === "" || password === "") {
+            // Display error by turning input boxes red
+            if (username === "") {
+                usernameInput.classList.add("error");
+            }
+            if (password === "") {
+                passwordInput.classList.add("error");
+            }
             return false; // Prevent form submission
         }
 
-        // Check if only username is missing
-        if (username.trim() === "") {
-            usernameInput.style.borderColor = "red";
-            return false; // Prevent form submission
-        }
-
-        // Check if only password is missing
-        if (password.trim() === "") {
-            passwordInput.style.borderColor = "red";
-            return false; // Prevent form submission
-        }
-
-        // Check if login credentials are valid (dummy validation)
+        // Check if username and password match the credentials
+        console.log("Username:", username);
+        console.log("Password:", password);
         if (username === "example" && password === "password") {
+            // Set session storage variables
             sessionStorage.setItem("isLoggedIn", "true");
-            sessionStorage.setItem("loacalUsername", username);
-            window.location.href = "index.html"; // Redirect to home page
-            return false; // Prevent form submission
-        } else {
-            // Clear password field
-            document.getElementById("password").value = "";
+            sessionStorage.setItem("localUser", "example");
 
-            // Highlight the password field
-            passwordInput.style.borderColor = "red";
-            return false; // Prevent form submission
+            // Redirect to the home page
+            window.location.href = "index.html";
+        } else {
+            // Display error by turning input boxes red
+            usernameInput.classList.add("error");
+            passwordInput.classList.add("error");
         }
+
+        return false; // Prevent form submission
     }
-});
