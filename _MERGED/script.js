@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li><a href="index.html#browse">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logedInUserProfile.html">Profile</a></li>
                 <li><a href="#" id="logout">Logout</a></li>
             `;
         } else {

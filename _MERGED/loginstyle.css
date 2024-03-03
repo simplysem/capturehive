@@ -93,7 +93,7 @@ body {
     width: 300px;
 }
 
-.login-container h2 {
+.login-container h1 {
     text-align: center;
 }
 
@@ -121,7 +121,16 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.login-container form i {
+    margin-left: -30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 .login-container form button:hover {
     background-color: #0056b3;
 }
 
+.error {
+    border: 1px solid red;
+}

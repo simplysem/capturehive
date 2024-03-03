@@ -106,7 +106,6 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5px 0;
     background-color: #0298ba9d;
     border-radius: 10px;
@@ -122,6 +121,7 @@ body{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
 /* Popular description styles */
@@ -137,8 +137,11 @@ body{
 
 /* Popular image div styles */
 .popular-image-div{
+    width: 100%;
     flex: 2;
     display: flex;
+    object-fit: contain;
+    height: 700px;
 }
 
 /* Popular info styles */
@@ -150,6 +153,8 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Popular info heading styles */
@@ -158,16 +163,6 @@ body{
     margin: 15px;
     color: #000000;
     text-align: center;
-}
-
-/* Popular info list item styles */
-.popular-info ul li{
-    justify-content: left;
-    list-style: none;
-    display: flex;
-    margin: 5% 20px;
-    position: relative;
-    align-items: center;
 }
 
 /* Popular info paragraph styles */
@@ -193,16 +188,20 @@ body{
     margin: 1%;
     width: 50%;
     display: flex;
-    justify-content: left;
     align-items: center;
     padding: 5px 0;
     border-radius: 10px;
     flex-direction: column;
 }
 
+.featured-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Featured image styles */
 .featured-image{
-    width: 400px;
+    width: 350px;
     margin: 5px;
     position: relative;
     overflow: hidden;
@@ -212,11 +211,12 @@ body{
 
 /* Featured heading styles */
 .featured h2{
-    order: 1;
+    order: 0;
     display: flex;
     font-size: 48px;
     color: #000000;
     text-align: center;
+    align-self: center;
 }
 
 /* Featured images styles */
@@ -224,31 +224,58 @@ body{
     flex:1;
     display: flex;
     flex-direction: column;
-}
-
-/* Featured container styles */
-.featured-container{
-    order: 2;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     height: 100%;
 }
 
-/* Featured images paragraph styles */
-.featured-images p{
-    font-size: 20px;
-    margin: 15px;
-    color: #000000;
-    width: 80%;
-}
-
-.featured-image-item{
+/* Featured container styles */
+.featured-item {
     display: flex;
-    margin: 1% 2px;
-    position: relative;
     align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCCCCC; /* subtle line color */
+    padding-bottom: 10px; /* space above the line */
+    margin-bottom: 10px; /* space below the line */
+}
+  
+.featured-item.reverse {
+    flex-direction: row-reverse;
+}
+  
+.featured-image-container {
+    flex-basis: 50%;
+}
+  
+.featured-image {
+    max-width: 100%; /* ensures image is not larger than its container */
+    height: auto; /* maintains the aspect ratio of the image */
+    display: block; /* ensures that the image does not have extra space around it */
+    margin-bottom: 20px; /* adds space below each image */
+}
+  
+  
+.description {
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+  
+.description.right {
+    text-align: right;
+}
+  
+.description.left {
+    text-align: left;
+}
+  
+@media (max-width: 768px) {
+    .featured-item, .featured-item.reverse {
+      flex-direction: column;
+    }
+  
+    .description {
+      text-align: center;
+      padding: 20px;
+    }
 }
 
 /* Media query for screens up to 1400px */
@@ -258,7 +285,7 @@ body{
         height: auto;
     }
     
-    .popular-info, .featured-container {
+    .featured-container {
         flex-direction: column;
     }
     
@@ -269,6 +296,12 @@ body{
     .popular-info ul li, .featured ul li {
         margin: 10px 0;
     }
+
+    .featured-image {
+        width: 60%;
+
+    }
+
 }
 
 /* Media query for screens up to 800px */
@@ -296,10 +329,6 @@ body{
         display: flex;
         flex-direction: row;
         order: -1;
-    }
-
-    .popular-info ul li {
-        display: inline-block;
     }
 
     .popular-description{
@@ -485,3 +514,14 @@ select {
 
 /* Smooth scrolling for HTML */
 html{scroll-behavior:smooth}
+
+.featured-image-container img, .popular-image-div img, .feed-image img {
+    border: 1px solid #dddddd; /* subtle border color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft shadow effect */
+    transition: transform 0.2s; /* smooth transition for hover effect */
+  }
+  
+  .featured-image-container img:hover, .popular-image-div img:hover, .feed-image img:hover {
+    transform: scale(1.03); /* subtle zoom effect on hover */
+  }
+  

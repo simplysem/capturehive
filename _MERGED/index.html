@@ -20,8 +20,32 @@
                 
             <div class="popup-content" onclick="closePopup()">
                 <span class="close" onclick="closePopup()">&times;</span>
-                <p>Welcome to our website! Here's the latest news:</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisi et dui volutpat venenatis a ac ex. Ut tristique mattis enim, volutpat ullamcorper lorem gravida nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus luctus tristique. Aliquam quis velit efficitur, euismod lorem eget, commodo erat. In hac habitasse platea dictumst. Phasellus imperdiet eros risus, id euismod mi pretium id. Vivamus ullamcorper cursus turpis id condimentum. Aenean mattis tristique enim id cursus. Nunc sit amet nisi tellus. Praesent est ipsum, pretium ut dapibus sed, aliquam non dui. Nunc sapien lorem, lobortis eget vulputate et, fringilla non tortor. Aliquam fermentum mauris id metus tempor tristique. Maecenas commodo tellus nisi, ut scelerisque elit eleifend eget. Aliquam eu libero nulla. Sed ac faucibus odio.</p>
+                <p>Welcome to <strong>Capture Hive</strong>! 🐝</p>
+
+<p>Discover the artistry of visual storytelling in our thriving community of professional photographers and camera enthusiasts. At Capture Hive, we believe that every image has a story to tell, and we're here to provide a buzzing hive for you to share, connect, and inspire.</p>
+
+<p><strong>Why Join Capture Hive?</strong></p>
+
+<ul>
+  <li><strong>Showcase Your Talent:</strong> Unleash the power of your lens! Share your captivating photos and let them speak volumes about your passion for photography.</li>
+  
+  <li><strong>Connect with Like-Minded Creators:</strong> Engage with a community that shares your love for the art of capturing moments. Exchange ideas, tips, and inspiration with fellow photographers.</li>
+  
+  <li><strong>Explore Diverse Perspectives:</strong> Immerse yourself in a world of visual diversity. From professional portfolios to hobbyist snapshots, Capture Hive celebrates the beauty of every perspective.</li>
+  
+  <li><strong>Discover Hidden Gems:</strong> Stumble upon hidden gems and explore the unique stories behind each image. Our platform is a treasure trove of creativity waiting to be uncovered.</li>
+  
+  <li><strong>Safe and Supportive Environment:</strong> Capture Hive is more than just a platform; it's a supportive community. Connect with a network of photographers who understand and appreciate the craft.</li>
+  
+  <li><strong>Embark on Your Photographic Journey:</strong> Whether you're a seasoned pro or just starting, Capture Hive is your launchpad for a photographic adventure. Elevate your skills, gain exposure, and make lasting connections.</li>
+</ul>
+
+<p>Join us in shaping the future of visual storytelling. Capture, share, and bee inspired!</p>
+
+<p>Sign up today and let your images create a buzz!</p>
+
+<p><em>Capture Hive Team</em></p>
+
             </div>
 
 
@@ -55,43 +79,57 @@
                 <div class="popular" onclick="openpost()" style="cursor: pointer;">
 
                     <div class="popular-info">
-                        <ul>
-                            <li><h2>Title of most popular image</h2></li>
-                            <li class="user-info">
-                                <b><p>Mob Barley</p></b>
-                                <img src="images/user.png" alt="user" class="user-image">
-                            </li>
-                            <li><h4>Captured on: </h4></li>
-                            <li><p>Nikon D90</p></li>
-                        </ul>
+                        <div class="populartitle">
+                            <h2>Title of most popular image</h2>
+                        </div>
+                        <div class="user-info">
+                            <b><p>Mob Barley</p></b>
+                            <img src="images/user.png" alt="user" class="user-image">
+                        </div>
                     </div>
                     <div class="popular-image-div">
                         <img src="images/DSC_4774.jpg" alt="popular image" class="popular-image">
                     </div>
                 </div>
-                <div class="featured">
-                    <h2>Featured Images</h2>
+                <div class="featured" onclick="openpost()" style="cursor: pointer;">
+                    
                     <div class="featured-container">
-                        <div class="featured-images">
-                            <div class="featured-image-item" onclick="location.href='about.html';" style="cursor: pointer;">
-                                <div class="featured-image-container">
-                                    <img src="images/DSC_4819.jpg" alt="featured image" class="featured-image">
-                                </div>
-                            </div>
-                            <div class="featured-image-item" onclick="location.href='about.html';" style="cursor: pointer;">
-                                <div class="featured-image-container">
-                                    <img src="images/DSC_4832.jpg" alt="featured image" class="featured-image">
-                                </div>
-                            </div>
-                            <div class="featured-image-item" onclick="location.href='about.html';" style="cursor: pointer;">
-                                <div class="featured-image-container">
-                                    <img src="images/DSC_4857.jpg" alt="featured image" class="featured-image">
-                                </div>
-                            </div>
+                        <h2>Featured Images</h2>
+                      <!-- First Image with Description on the Right -->
+                      <div class="featured-item">
+                        <div class="featured-image-container">
+                          <img src="images/DSC_4819.jpg" alt="featured image" class="featured-image">
                         </div>
+                        <div class="description right">
+                          <h3>Title for First Image</h3>
+                          <p>Description for the first image...</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Second Image with Description on the Left -->
+                      <div class="featured-item reverse">
+                        <div class="featured-image-container">
+                          <img src="images/DSC_4832.jpg" alt="featured image" class="featured-image">
+                        </div>
+                        <div class="description left">
+                          <h3>Title for Second Image</h3>
+                          <p>Description for the second image...</p>
+                        </div>
+                      </div>
+                  
+                      <!-- Third Image with Description on the Right -->
+                      <div class="featured-item">
+                        <div class="featured-image-container">
+                          <img src="images/DSC_4857.jpg" alt="featured image" class="featured-image">
+                        </div>
+                        <div class="description right">
+                          <h3>Title for Third Image</h3>
+                          <p>Description for the third image...</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+                  
 
             <div class="feed"  id = "browse">
                 <div class="feed-title">
@@ -112,7 +150,7 @@
                     </div>
 
                     <div id="gallery" class="grid-container">
-                        <div class="grid-item" data-age="2" data-likes="20" data-tag="car">
+                        <div class="grid-item" data-age="2" data-likes="20" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                             </div>
@@ -128,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="4" data-likes="6" data-tag="animal">
+                        <div class="grid-item" data-age="4" data-likes="6" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
@@ -144,7 +182,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="1" data-likes="0" data-tag="car">
+                        <div class="grid-item" data-age="1" data-likes="0" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
                             </div>
@@ -160,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="2" data-likes="15" data-tag="animal">
+                        <div class="grid-item" data-age="2" data-likes="15" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
@@ -176,7 +214,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="34" data-likes="124" data-tag="car">
+                        <div class="grid-item" data-age="34" data-likes="124" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4832.jpg" alt="Image 1">
                             </div>
@@ -192,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="4" data-likes="32" data-tag="animal">
+                        <div class="grid-item" data-age="4" data-likes="32" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
@@ -208,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="12" data-likes="134" data-tag="car">
+                        <div class="grid-item" data-age="12" data-likes="134" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
                             </div>
@@ -224,7 +262,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="6" data-likes="35" data-tag="car">
+                        <div class="grid-item" data-age="6" data-likes="35" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4774.jpg" alt="Image 1">
                             </div>
@@ -240,7 +278,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="1" data-likes="6" data-tag="animal">
+                        <div class="grid-item"  data-age="1" data-likes="6" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey.jpg" alt="Image 1">
                             </div>
@@ -256,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="2" data-likes="15" data-tag="car">
+                        <div class="grid-item"  data-age="2" data-likes="15" data-tag="car" onclick="openpost()" style="cursor: pointer;"> 
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                             </div>
@@ -272,7 +310,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="5" data-likes="47" data-tag="animal">
+                        <div class="grid-item"  data-age="5" data-likes="47" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
@@ -288,7 +326,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="9" data-likes="28" data-tag="car">
+                        <div class="grid-item" data-age="9" data-likes="28" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
                             </div>
@@ -304,7 +342,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item" data-age="16" data-likes="2005" data-tag="animal">
+                        <div class="grid-item" data-age="16" data-likes="2005" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
@@ -320,7 +358,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="3" data-likes="3" data-tag="car">
+                        <div class="grid-item"  data-age="3" data-likes="3" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4857.jpg" alt="Image 1">
                             </div>
@@ -336,7 +374,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="12" data-likes="124" data-tag="car">
+                        <div class="grid-item"  data-age="12" data-likes="124" data-tag="car" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="images/DSC_4819.jpg" alt="Image 1">
                             </div>
@@ -352,7 +390,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item"  data-age="1" data-likes="124" data-tag="animal">
+                        <div class="grid-item"  data-age="1" data-likes="124" data-tag="animal" onclick="openpost()" style="cursor: pointer;">
                             <div class="feed-image">
                                 <img class="feed-main-image" src="monkey2.jpg" alt="Image 1">
                             </div>
