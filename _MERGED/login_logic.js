@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    let loacalUsername = sessionStorage.getItem("hasRead");
+    let loacalUsername = sessionStorage.getItem("loacalUsername");
 
     // Check if "loacalUsername" is null (indicating it hasn't been initialized yet)
     if (loacalUsername === null) {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Check if login credentials are valid (dummy validation)
         if (username === "example" && password === "password") {
-            sessionStorage.setItem("isLoggedIn", "true"); // Store isLoggedIn in sessionStorage
+            sessionStorage.setItem("isLoggedIn", "true");
             sessionStorage.setItem("loacalUsername", username);
             window.location.href = "index.html"; // Redirect to home page
             return false; // Prevent form submission
