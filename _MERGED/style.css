@@ -106,7 +106,6 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5px 0;
     background-color: #0298ba9d;
     border-radius: 10px;
@@ -122,6 +121,7 @@ body{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
 /* Popular description styles */
@@ -137,8 +137,11 @@ body{
 
 /* Popular image div styles */
 .popular-image-div{
+    width: 100%;
     flex: 2;
     display: flex;
+    object-fit: contain;
+    height: 700px;
 }
 
 /* Popular info styles */
@@ -150,6 +153,8 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Popular info heading styles */
@@ -158,16 +163,6 @@ body{
     margin: 15px;
     color: #000000;
     text-align: center;
-}
-
-/* Popular info list item styles */
-.popular-info ul li{
-    justify-content: left;
-    list-style: none;
-    display: flex;
-    margin: 5% 20px;
-    position: relative;
-    align-items: center;
 }
 
 /* Popular info paragraph styles */
@@ -202,7 +197,7 @@ body{
 
 /* Featured image styles */
 .featured-image{
-    width: 400px;
+    width: 350px;
     margin: 5px;
     position: relative;
     overflow: hidden;
@@ -224,6 +219,8 @@ body{
     flex:1;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 /* Featured container styles */
@@ -233,7 +230,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 100%;
+    height: 800px;
 }
 
 /* Featured images paragraph styles */
@@ -251,6 +248,12 @@ body{
     align-items: center;
 }
 
+.featured-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Media query for screens up to 1400px */
 @media screen and (max-width: 1400px) {
     .popular, .featured {
@@ -258,7 +261,7 @@ body{
         height: auto;
     }
     
-    .popular-info, .featured-container {
+    .featured-container {
         flex-direction: column;
     }
     
@@ -269,6 +272,12 @@ body{
     .popular-info ul li, .featured ul li {
         margin: 10px 0;
     }
+
+    .featured-image {
+        width: 60%;
+
+    }
+
 }
 
 /* Media query for screens up to 800px */
@@ -296,10 +305,6 @@ body{
         display: flex;
         flex-direction: row;
         order: -1;
-    }
-
-    .popular-info ul li {
-        display: inline-block;
     }
 
     .popular-description{
