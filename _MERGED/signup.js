@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("This username is already taken.");
         } else {
             sessionStorage.setItem("localUser", username);
+            sessionStorage.setItem("isLoggedIn", "true");
             // Redirect to another page if needed
             window.location.href = "index.html";
         }
