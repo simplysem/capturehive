@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" href="loginstyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Password Visibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="loginstyle.css" />
 </head>
 
 <body>
-
     <div class="nav-header">
         <a href="index.html">
             <img src="capturehive.png" alt="logo" class="logo" style="width: 193px;height: 31px;">
         </a>
-        <ul>
+        <ul id="nav">
             <b>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#browse">Browse</a></li>
@@ -25,18 +24,36 @@
         </ul>
     </div>
 
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <input type="text" name="username" id="username" placeholder="Username" required>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <button type="submit" onclick="login(event)">Login</button>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form method="post">
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </p>
+            <button type="submit" id="submit" class="submit">Log In</button>
         </form>
-        <p>Not got an account? <a href="signup.html">Sign up</a></p>
     </div>
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
 
-    <script src="login_logic.js"></script>
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+    </script>
+
+    </script src="login_logic.js"></script>
 
 </body>
-
 </html>
