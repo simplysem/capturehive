@@ -7,7 +7,7 @@ function login(event) {
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
 
-    // Resetting previous error styles
+    // remove error class
     usernameInput.classList.remove("error");
     passwordInput.classList.remove("error");
 
