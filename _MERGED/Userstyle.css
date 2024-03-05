@@ -89,3 +89,19 @@ body{
 .nav-header ul li a:hover::after{
     background: #868585
 }
+
+.about-me {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+p {
+  color: #999;
+}
