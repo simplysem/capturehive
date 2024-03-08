@@ -23,7 +23,7 @@ body{
     cursor: pointer;
 }
 
-/* Navigation header styles */
+/* Navigation header  */
 .nav-header{
     margin: auto;
     display: flex;
@@ -39,9 +39,10 @@ body{
     z-index: 999;
     position: sticky;
     top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Navigation header list item styles */
+/* Navigation header list item  */
 .nav-header ul li{
     list-style: none;
     display: inline-block;
@@ -51,7 +52,7 @@ body{
     transform: translateX(-50%);
 }
 
-/* Navigation header link styles */
+/* Navigation header link */
 .nav-header ul li a{
     text-decoration: none;
     color: #0298ba9d;
@@ -65,7 +66,7 @@ body{
     transition: background-color 0.3s ease; 
 }
 
-/* Navigation header link hover styles */
+/* Navigation header link hover */
 .nav-header ul li a::after{
     content: '';
     width: 150%;
@@ -80,28 +81,53 @@ body{
     transition: 0.3s ease; 
 }
 
-/* Navigation header link hover styles */
+/* Navigation header link hover */
 .nav-header ul li a:hover{
     color: #D9D9D9;
 }
 
-/* Navigation header link hover styles */
+/* Navigation header link hover */
 .nav-header ul li a:hover::after{
     background: #868585
 }
 
-.about-me {
-  margin-top: 20px;
+/* Container*/
+.container{
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-h1 {
-  color: #333;
+/* Profile section */
+.profile{
+    max-width: 800px;
+    margin: 40px auto; /* Centering and spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadows */
+    text-align: center; /* centered text */
 }
 
-h2 {
-  color: #666;
+h1, h2 {
+    color: #333;
+}
+
+.about-me{
+    text-align: left; /* Left-aligned text */
+    margin-top: 20px;
 }
 
 p {
-  color: #999;
+    color: #666;
+}
+
+
+/* Include media queries for responsiveness */
+@media (max-width: 768px) {
+    .profile{
+        margin: 20px;
+    }
 }
