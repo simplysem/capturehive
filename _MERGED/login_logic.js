@@ -1,5 +1,5 @@
 function login(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); // Prevent submission
 
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
@@ -11,9 +11,9 @@ function login(event) {
     usernameInput.classList.remove("error");
     passwordInput.classList.remove("error");
 
-    // Check if username or password is empty
+    // check if username or password is empty
     if (username === "" || password === "") {
-        // Display error by turning input boxes red
+        // display error by turning input boxes red
         if (username === "") {
             usernameInput.classList.add("error");
         }
@@ -23,19 +23,19 @@ function login(event) {
         return false; // Prevent form submission
     }
 
-    // Check if username and password match the credentials
+    // check if username and password match the credentials
     console.log("Username:", username);
     console.log("Password:", password);
     if (username === "example" && password === "password") {
-        // Set session storage variables
+        // det session storage variables
         sessionStorage.setItem("isLoggedIn", "true");
         sessionStorage.setItem("localUser", "example");
 
-        // Redirect to the home page
+        // redirect to the home page
         window.location.href = "index.html";
     } else {
         alert("Wrong Username or password.");
     }
 
-    return false; // Prevent form submission
+    return false; // prevent submission
 }

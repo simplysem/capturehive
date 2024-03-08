@@ -37,11 +37,11 @@ if (isLoggedIn === 'true') {
     
     // Favorite button functionality
     document.querySelector('.favorite-button').addEventListener('click', function() {
-        var favoriteButton = this;
-        if (favoriteButton.textContent === 'Favorite') {
-            favoriteButton.textContent = 'Unfavorite';
+        var favButton = this;
+        if (favButton.textContent === 'Favorite') {
+            favButton.textContent = 'Unfavorite';
         } else {
-            favoriteButton.textContent = 'Favorite';
+            favButton.textContent = 'Favorite';
         }
     });
 
@@ -49,22 +49,22 @@ if (isLoggedIn === 'true') {
     document.getElementById('comment-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
         
-        // Get comment input value
+        // Get comment input 
         var commentInput = document.getElementById('comment-input').value.trim();
         
         if (commentInput !== '') {
             // Add the comment to the comments array
             comments.push(commentInput);
-            // Save comments to session storage
+            // save comments to session storage
             sessionStorage.setItem('comments', JSON.stringify(comments));
-            // Update the comments displayed on the page
+            // update the comments displayed on the page
             addCommentsToDOM();
-            // Clear the comment input
+            // clear the comment input
             document.getElementById('comment-input').value = '';
         }
     });
 } else {
-    // If user is not logged in, disable commenting
+    // if the user isn't logged in, dont allow comments to be made
     document.getElementById('comment-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
     });

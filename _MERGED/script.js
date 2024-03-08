@@ -29,22 +29,19 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial load
     loadNav();
 
-    // Event listener for logout
+    // event listener for logout
     nav.addEventListener("click", function(event) {
         if (event.target.id === "logout") {
-            // Set isLoggedIn to false
-            sessionStorage.setItem("isLoggedIn", "false");
+            sessionStorage.setItem("isLoggedIn", "false"); // Set isLoggedIn to false
             window.location.href = "index.html";
         }
     });
 
-    // Event listener for page unload (closing page)
+    // event listener for closing page
     window.addEventListener("beforeunload", function(event) {
-        // Check if the user is logged in before unloading the page
+        // check if the user is logged in before closing page
         const isLoggedIn = sessionStorage.getItem("isLoggedIn");
         if (isLoggedIn === "true") {
-            // No need to update session storage here
-            // Session storage will automatically be cleared when the session ends
         }
     });
 });
