@@ -1,7 +1,7 @@
-// Retrieve comments from session storage when the page loads
+// take comments from session storage when the page loads
 var comments = JSON.parse(sessionStorage.getItem('comments')) || [];
 
-// Function to add comments to the DOM
+// adding comments to DOM
 function addCommentsToDOM() {
     var commentsList = document.querySelector('.comments-list');
     commentsList.innerHTML = ''; // Clear existing comments
@@ -17,13 +17,13 @@ function addCommentsToDOM() {
     });
 }
 
-// Add existing comments to the DOM when the page loads
+// Add ccomments to the DOM when the page loads
 addCommentsToDOM();
 
-// Retrieve the value of isLoggedIn from sessionStorage
+// get the value of isLoggedIn from session storage
 var isLoggedIn = sessionStorage.getItem("isLoggedIn");
 
-// Check if isLoggedIn is true
+// check if isLoggedIn is true
 if (isLoggedIn === 'true') {
     // Like button functionality
     document.querySelector('.like-button').addEventListener('click', function() {
@@ -49,11 +49,11 @@ if (isLoggedIn === 'true') {
     document.getElementById('comment-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
         
-        // Get comment input 
+        // get comment input 
         var commentInput = document.getElementById('comment-input').value.trim();
         
         if (commentInput !== '') {
-            // Add the comment to the comments array
+            // Add the input to the comments array
             comments.push(commentInput);
             // save comments to session storage
             sessionStorage.setItem('comments', JSON.stringify(comments));

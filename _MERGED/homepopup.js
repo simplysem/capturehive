@@ -4,9 +4,9 @@ function closePopup() {
     var blur = document.getElementById('blur');
     var popup = document.getElementById('mypopup');
     popup.style.display = 'none';
-    blur.classList.remove('active'); // Remove blur class from body
+    blur.classList.remove('active'); // remove blur class from body
             
-    // Set "hasRead" to true in session storage
+    //set hasRead to true in session storage
     // I am assuming that if you close the pop up you have read it
     sessionStorage.setItem("hasRead", 'true');
 }
@@ -14,12 +14,12 @@ function closePopup() {
 document.addEventListener("DOMContentLoaded", function() {
 
     // VAriable set here because it would never be initalized
-    // Retrieve the value of "hasRead" from session storage
+    // Retrieve the value of hasRead from session storage
     let hasRead = sessionStorage.getItem("hasRead");
 
-    // Check if "hasRead" is null (indicating it hasn't been initialized yet)
+    // Check if hasRead is null (indicating it hasn't been initialized yet)
     if (hasRead === null) {
-        // Set "hasRead" to false in session storage
+        // Set hasRead to false in session storage
         sessionStorage.setItem("hasRead", false);
     }
 

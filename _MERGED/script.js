@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const isLoggedIn = sessionStorage.getItem("isLoggedIn");
 
         if (isLoggedIn === "true") {
-            // Show logged-in variant
+            // nav bar when logged in
             nav.innerHTML = `
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#browse">Gallery</a></li>
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li><a href="#" id="logout">Logout</a></li>
             `;
         } else {
-            // Show logged-out variant
+            // nav bar when logged out
             nav.innerHTML = `
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#browse">Gallery</a></li>

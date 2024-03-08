@@ -20,10 +20,10 @@ function login(event) {
         if (password === "") {
             passwordInput.classList.add("error");
         }
-        return false; // Prevent form submission
+        return false; // prevent submission
     }
 
-    // check if username and password match the credentials
+    // check if username and password are correct
     console.log("Username:", username);
     console.log("Password:", password);
     if (username === "example" && password === "password") {

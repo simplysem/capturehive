@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial filtering and sorting
+    // filtering and sorting
     filterGallery();
     sortGallery();
 });

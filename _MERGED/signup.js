@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             sessionStorage.setItem("localUser", username);
             sessionStorage.setItem("isLoggedIn", "true");
-            // Redirect to another page if needed
+            // takes the user back to the home page
             window.location.href = "index.html";
         }
     });

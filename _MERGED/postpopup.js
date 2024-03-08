@@ -9,5 +9,5 @@ function closepost() {
     var blur = document.getElementById('blur');
     var popup = document.getElementById('post1');
     popup.style.display = 'none';
-    blur.classList.remove('active'); // Remove blur 
+    blur.classList.remove('active'); // remove blur 
 }

@@ -91,7 +91,7 @@ body{
     background: #868585
 }
 
-/* Container*/
+
 .container{
     margin: 0 5px;
     display: flex;
@@ -106,7 +106,7 @@ body{
     margin: 40px auto; /* Centering and spacing */
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; /* rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadows */
     text-align: center; /* centered text */
 }

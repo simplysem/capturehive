@@ -131,6 +131,6 @@ body {
     background-color: #0056b3;
 }
 
-.error {
+.error { /* add red border  */
     border: 1px solid red;
 }
